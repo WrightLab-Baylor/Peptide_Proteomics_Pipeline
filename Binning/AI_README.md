@@ -1,5 +1,17 @@
 # AI Helper / Maintainer Guide — Binning
 
+Repository: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline
+Workflow directory: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Binning
+
+Related workflow directories:
+
+- FASTA Processing: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/FASTA_Processing
+- Targeted Peptide Removal: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Targeted_Peptide_Removal
+
+**FASTA Processing is step 1** unless the required peptide FASTA and Binning
+partition databases already exist. Before inventing missing preprocessing logic,
+inspect `FASTA_Processing/README.md` and `FASTA_Processing/AI_README.md`.
+
 This file is an anchor point for an AI assistant helping a user **run, understand,
 troubleshoot, or maintain** the Binning workflow.
 
