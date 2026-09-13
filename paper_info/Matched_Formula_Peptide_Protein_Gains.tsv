@@ -1,0 +1,22 @@
+Dataset	FormulaDesign	PartitionStructure	BinSize	BaselinePeptides	CorrectedPeptides	PeptideGain	BaselineProteins	CorrectedProteins	ProteinGain
+Fecal	Individual Bins	9 groups		4179	4396	217	17034	17835	801
+Fecal	Pairwise Bins	36 pairs		4179	4307	128	17034	17363	329
+Fecal	1.2M Individual Bins	10 groups	1.2M	4179	4438	259	17034	17887	853
+Fecal	600k Individual Bins	21 groups	600k	4179	4502	323	17034	18019	985
+Fecal	300k Individual Bins	41 groups	300k	4179	4568	389	17034	18218	1184
+Fecal	150k Individual Bins	82 groups	150k	4179	4677	498	17034	18482	1448
+Fecal	75k Individual Bins	164 groups	75k	4179	4658	479	17034	18526	1492
+Ocean	Individual Bins	9 groups		14285	15131	846	39884	40968	1084
+Ocean	Pairwise Bins	36 pairs		14285	14888	603	39884	40663	779
+Ocean	1.2M Individual Bins	17 groups	1.2M	14285	15409	1124	39884	41349	1465
+Ocean	600k Individual Bins	35 groups	600k	14285	15442	1157	39884	41482	1598
+Ocean	300k Individual Bins	69 groups	300k	14285	15733	1448	39884	41873	1989
+Ocean	150k Individual Bins	139 groups	150k	14285	16039	1754	39884	42142	2258
+Ocean	75k Individual Bins	277 groups	75k	14285	16041	1756	39884	42078	2194
+Soil	Individual Bins	9 groups		2125	2263	138	11832	13120	1288
+Soil	Pairwise Bins	36 pairs		2125	2180	55	11832	11959	127
+Soil	1.2M Individual Bins	11 groups	1.2M	2125	2276	151	11832	12381	549
+Soil	600k Individual Bins	22 groups	600k	2125	2339	214	11832	13421	1589
+Soil	300k Individual Bins	44 groups	300k	2125	2435	310	11832	13890	2058
+Soil	150k Individual Bins	88 groups	150k	2125	2596	471	11832	14381	2549
+Soil	75k Individual Bins	177 groups	75k	2125	2573	448	11832	14921	3089

@@ -1,0 +1,13 @@
+Condition	Sample	Peptide_FASTA	Repository	Accession
+Human Fecal	FECAL_GBL1.raw	Fecal_peptide.fasta	MassIVE	MSV000098948
+Human Fecal	FECAL_GBL2.raw	Fecal_peptide.fasta	MassIVE	MSV000098948
+Human Fecal	FECAL_GBL3.raw	Fecal_peptide.fasta	MassIVE	MSV000098948
+Human Fecal	FECAL_GBL4.raw	Fecal_peptide.fasta	MassIVE	MSV000098948
+Ocean	2022_01_13_HAB_timeseries_DDA_45_17_01.raw	full_metagenome_DB_peptide.fasta	PRIDE	PXD052873
+Ocean	2022_01_13_HAB_timeseries_DDA_46_20_09.raw	full_metagenome_DB_peptide.fasta	PRIDE	PXD052873
+Ocean	2022_01_13_HAB_timeseries_DDA_47_18_01.raw	full_metagenome_DB_peptide.fasta	PRIDE	PXD052873
+Ocean	2022_01_13_HAB_timeseries_DDA_48_21_17.raw	full_metagenome_DB_peptide.fasta	PRIDE	PXD052873
+Soil	OSU_1_day1_p_CT_1_QE_RR_17July19_Rage_Rep-19-05-02b.raw	combined_CT_noCT_MetaGdatabase_peptide.fasta	PRIDE	PXD019911
+Soil	OSU_1_day3_p_37_QE_RR_17July19_Rage_Rep-19-05-02b.raw	combined_CT_noCT_MetaGdatabase_peptide.fasta	PRIDE	PXD019911
+Soil	OSU_1_day7_p_49_QE_RR_17July19_Rage_Rep-19-05-02b.raw	combined_CT_noCT_MetaGdatabase_peptide.fasta	PRIDE	PXD019911
+Soil	OSU_1_day10_p_CT_13_QE_RR_17July19_Rage_Rep-19-05-02b.raw	combined_CT_noCT_MetaGdatabase_peptide.fasta	PRIDE	PXD019911
