@@ -1,5 +1,13 @@
 # AI Helper / Maintainer Guide — Targeted Peptide Removal
 
+Repository: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline
+Workflow directory: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Targeted_Peptide_Removal
+
+Related workflow directories:
+
+- FASTA Processing: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/FASTA_Processing
+- Binning: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Binning
+
 This file is an anchor point for an AI assistant helping a user **run,
 understand, troubleshoot, or maintain** the Targeted Peptide Removal workflow.
 
@@ -9,24 +17,24 @@ Do not begin by rewriting scripts.
 
 ---
 
-## 1. Understand the three-repository workflow
+## 1. Understand the three-workflow repository
 
 This repository does **not** begin from a protein FASTA.
 
-Upstream FASTA processing is handled by a separate repository that digests the
-protein FASTA into a peptide FASTA and produces the peptide/protein digest map.
+Upstream FASTA processing is handled by the sibling `FASTA_Processing/` workflow
+directory, which digests the protein FASTA into a peptide FASTA and produces the
+peptide/protein digest map.
 The Targeted Peptide Removal workflow begins with the resulting peptide FASTA.
 
-A third related repository contains the Binning workflow.
+The sibling `Binning/` workflow directory contains the Binning workflow.
 
-Once repository URLs are finalized, this guide should be updated to link all
-three repositories and instruct helpers to inspect the related repos when
-cross-workflow resources are needed.
+When cross-workflow resources are needed, inspect all three workflow directories
+in this repository before inventing missing functionality.
 
 Conceptually:
 
 ```text
-shared FASTA-processing repository
+FASTA_Processing workflow directory
     |
     | protein FASTA -> peptide FASTA + peptide/protein digest map
     v
@@ -344,7 +352,7 @@ If clustering is needed, CD-HIT may be:
 - available as `cd-hit` on `PATH`; or
 - supplied explicitly using `--cdhit-path`.
 
-A future task for the shared FASTA-processing repository is to include
+A future task for the FASTA_Processing workflow directory is to include
 AI-facing installation guidance for CD-HIT.
 
 ---
@@ -470,7 +478,7 @@ deduplicate these utilities unless every launcher and dependency has been
 updated and regression-tested.
 
 There is no active per-repository `environment.yml` intended for the final
-three-repository release. A shared environment definition will be maintained
+three-workflow release. A shared environment definition will be maintained
 outside the three workflow repositories.
 
 ---
