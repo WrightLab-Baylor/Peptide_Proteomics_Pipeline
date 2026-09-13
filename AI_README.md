@@ -1,7 +1,9 @@
 # AI Helper Guide — Proteomics FDR Adjustment Workflows
 
+Repository: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline
+
 This is the top-level handoff guide for AI assistants working with the three
-related workflow forks:
+related workflow directories:
 
 ```text
 FASTA_Processing
@@ -58,7 +60,7 @@ and guide the user through the correct preceding step.
 
 ## Shared environment
 
-All three forks use the shared top-level:
+All three workflow directories use the shared top-level:
 
 ```text
 environment.yml
@@ -78,6 +80,15 @@ experience. Prefer:
 - identifying missing upstream inputs before modifying code;
 - preserving the scientific defaults and invariants documented in each fork.
 
-The fork-specific `AI_README.md` files contain the detailed operational and
+The workflow-specific `AI_README.md` files contain the detailed operational and
 maintenance constraints and should be treated as the primary source of truth
 for each workflow.
+
+Direct workflow links:
+
+- FASTA Processing: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/FASTA_Processing
+- Binning: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Binning
+- Targeted Peptide Removal: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Targeted_Peptide_Removal
+
+Before inventing missing functionality, inspect all three workflow directories when
+the task crosses FASTA preparation, Binning, or Targeted Peptide Removal.
