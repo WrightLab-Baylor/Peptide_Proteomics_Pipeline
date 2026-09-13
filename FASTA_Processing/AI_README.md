@@ -1,5 +1,13 @@
 # AI Helper / Maintainer Guide — FASTA Processing
 
+Repository: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline
+Workflow directory: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/FASTA_Processing
+
+Related workflow directories:
+
+- Binning: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Binning
+- Targeted Peptide Removal: https://github.com/WrightLab-Baylor/Peptide_Proteomics_Pipeline/tree/main/Targeted_Peptide_Removal
+
 This file is an anchor point for an AI assistant helping a user **run,
 understand, troubleshoot, or maintain** the FASTA Processing workflow.
 
@@ -12,7 +20,7 @@ path.
 
 ## 1. Understand this repository's role
 
-FASTA Processing is the shared upstream repository for two related workflows:
+FASTA Processing is the shared upstream workflow directory for two related workflows:
 
 ```text
 FASTA Processing
@@ -29,11 +37,10 @@ Its responsibilities are limited to:
 It does **not** perform MS-GF+ searching, FDR estimation, peptide/protein
 downstream processing, correctional-formula analysis, or result collation.
 
-Those operations belong to the Binning and Targeted Peptide Removal
-repositories.
+Those operations belong to the Binning and Targeted Peptide Removal workflow
+directories in the same repository.
 
-Once GitHub URLs are finalized, add links to all three repositories near the
-top of this file. Future AI helpers should be instructed to inspect all three
+When a task crosses workflow boundaries, inspect all three workflow directories
 before inventing missing functionality.
 
 ---
@@ -50,7 +57,7 @@ When a user asks how to prepare a FASTA, identify:
    - only the reusable peptide FASTA resources;
    - Binning databases;
    - or both;
-6. where the related Binning repository/data root lives if Binning databases are
+6. where the related Binning workflow/data root lives if Binning databases are
    requested.
 
 For a novice:
@@ -72,7 +79,7 @@ pwd
 find data -maxdepth 3 -type f | sort
 ```
 
-and, if a related repository is elsewhere:
+and, if a related workflow data root is elsewhere:
 
 ```bash
 find /path/to/project -maxdepth 3 -type d | sort
@@ -244,7 +251,7 @@ Default Binning destination:
 ../Binning/data
 ```
 
-If the related Binning repository is elsewhere:
+If the related Binning workflow data root is elsewhere:
 
 ```text
 --binning-data-root /path/to/Binning/data
@@ -401,7 +408,7 @@ merely for collator compatibility; current Binning discovery is label-flexible.
 
 After partition generation, do not continue implementing Binning analysis here.
 
-The next workflow belongs to the Binning repository and begins from dataset
+The next workflow belongs to the Binning directory and begins from dataset
 directories such as:
 
 ```text
@@ -414,7 +421,7 @@ and:
 Binning/data/Soil_1/Soil_Groups_1.2M/
 ```
 
-A future AI helper should consult the Binning `README.md` and `AI_README.md`
+A future AI helper should consult `Binning/README.md` and `Binning/AI_README.md`
 before guiding the user through search/downstream/correction stages.
 
 ---
@@ -429,7 +436,7 @@ clustered peptide FASTA
 peptide_protein_digest_map.tsv
 ```
 
-Do not duplicate the digest code in that repository.
+Do not duplicate the digest code in that workflow directory.
 
 The Targeted Peptide Removal workflow owns:
 
@@ -507,6 +514,6 @@ If behavior changes, update:
 - the related Targeted Peptide Removal documentation if shared FASTA resources
   change.
 
-When the GitHub repositories are created, add all three repository links and
-tell future AI helpers to inspect all three related projects before creating
+Keep the repository and workflow links near the top of this file current, and
+tell future AI helpers to inspect all three workflow directories before creating
 new cross-workflow code.
